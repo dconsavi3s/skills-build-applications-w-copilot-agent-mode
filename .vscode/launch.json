@@ -2,6 +2,23 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Run Django (Octofit Tracker)",
+      "type": "python",
+      "request": "launch",
+      "program": "octofit-tracker/backend/manage.py",
+      "args": ["runserver", "0.0.0.0:8000"],
+      "django": true,
+      "cwd": "/workspaces/skills-build-applications-w-copilot-agent-mode",
+      "env": {
+        "CODESPACE_NAME": "${env:CODESPACE_NAME}"
+      }
+    }
+  ]
+}
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
       "name": "Launch Django Backend",
       "type": "python",
       "request": "launch",
