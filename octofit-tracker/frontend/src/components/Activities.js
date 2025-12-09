@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const API_BASE = `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev`;
-const ENDPOINT = `${API_BASE}/api/activities/`;
+const ENDPOINT = `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/activities/`;
 
 export default function Activities() {
   const [data, setData] = useState([]);
